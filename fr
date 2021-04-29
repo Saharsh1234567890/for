@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Number Counter</h2>
+
+<p>This project will let you count till the previous number you assigned!!</p>
+
+<p>--------------------------------------------------------------------------------------------------</p>
+
+<p id="demo">Your answer will be printed here!!</p>
+
+<input type="text" id="nc" name="nc">
+
+<button type="button" onclick="loop()">Try it!!</button>
+
+<script>
+
+function loop(){
+
+var x = "";
+var i;
+for (i = 1; i < document.getElementById("nc").value; i++) {
+  x = x + "Number: " + i + "<br>";
+}
+document.getElementById("demo").innerHTML = x;
+
+}
+
+
+</script>
+
+</body>
+</html>
